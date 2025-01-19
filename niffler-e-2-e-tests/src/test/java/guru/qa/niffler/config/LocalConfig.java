@@ -12,4 +12,10 @@ enum LocalConfig implements Config {
   public String spendUrl() {
     return "http://127.0.0.1:8093/";
   }
+
+  @Override
+  public String defaultUser() { return "duck"; }
+
+  @Override
+  public String defaultPassword() { return "12345"; }
 }
